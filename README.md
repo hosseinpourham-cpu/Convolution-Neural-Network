@@ -57,7 +57,7 @@ Example outputs :
 
 ```bash
 pip install -r requirements.txt
-python train.py
+python main.py
 ```
 
 ---
