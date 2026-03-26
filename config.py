@@ -1,0 +1,32 @@
+# config.py
+
+# Dataset
+BATCH_SIZE = 128
+NUM_CLASSES = 10
+
+#Res_net
+INPUT_SHAPE = (32, 32, 3)
+Res_DROPOUT_RATE = 0.2
+
+# Training0module
+EPOCHS = 100
+INITIAL_LEARNING_RATE = 0.05
+S_ALPHA=1e-2
+MOMENTUM=0.9
+LABEL_SMOOTHING = 0.03
+
+
+
+
+# Regularization
+DROPOUT_RATE = 0.2
+L2_WEIGHT = 5e-4
+
+# Callbacks
+EARLY_STOP_PATIENCE = 10
+LR_REDUCE_PATIENCE = 3
+LR_REDUCE_FACTOR = 0.3
+MIN_LR = 1e-5
+
+# Model saving
+MODEL_PATH = "best_cifar10_model.keras"
