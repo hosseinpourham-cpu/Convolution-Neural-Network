@@ -19,7 +19,8 @@ def mixup(x,y , alpha):
 
 def create_datasets(x_train,y_train, x_test,y_test, batch_size=config.BATCH_SIZE):
     train_ds = tf.data.Dataset.from_tensor_slices((x_train,y_train))
-    train_ds = (train_ds.shuffle(50000).batch(batch_size).map(mixup,num_parallel_calls=tf.data.AUTOTUNE).prefetch(tf.data.AUTOTUNE))
+   # train_ds = (train_ds.shuffle(50000).batch(batch_size).map(mixup,num_parallel_calls=tf.data.AUTOTUNE).prefetch(tf.data.AUTOTUNE))
+    train_ds = (train_ds.shuffle(50000).batch(batch_size).prefetch(tf.data.AUTOTUNE))
 
     val_ds = tf.data.Dataset.from_tensor_slices((x_test,y_test))
     val_ds = val_ds.batch(batch_size).prefetch(tf.data.AUTOTUNE)
