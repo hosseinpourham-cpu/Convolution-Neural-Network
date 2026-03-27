@@ -13,7 +13,6 @@ env/
 *.h5
 checkpoints/
 
-
 # Jupyter
 .ipynb_checkpoints/
 
