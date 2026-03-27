@@ -1,4 +1,0 @@
-tensorFlow>=2.11
-numpy
-matplotlib
-scikit-learn
