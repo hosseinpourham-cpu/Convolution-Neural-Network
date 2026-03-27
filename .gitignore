@@ -13,9 +13,6 @@ env/
 *.h5
 checkpoints/
 
-# Outputs
-outputs/
-
 # Jupyter
 .ipynb_checkpoints/
 
