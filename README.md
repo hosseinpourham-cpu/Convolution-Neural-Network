@@ -3,8 +3,8 @@ This project implements a convolutional Neural Network (ResNet-style) for image 
 
 It contains :
 - Data augmentation
-- Resifual blocks (ResNet architecture)
-- MixUp regularization : the current version is commented. Suggestion: use beta distribution with random beta. good for general datasets
+- Resifual blocks (costum ResNet architecture)
+- MixUp regularization
 - Learning rate scheduling
 - Early stopping and checkpointing
 - Evaluation with confusion matrix
@@ -31,6 +31,7 @@ It contains :
 
 - MixUp data augmentation
 - Cosine learning rate schedule
+- SGD optmizer
 - EarlyStopping
 - ModelCheckpoint (best model saved)
 
@@ -38,9 +39,9 @@ It contains :
 
 ## Results 
 
-- Test Accuracy : ~ %
-- Validation Accuracy : ~ %
-
+- Test Accuracy : ~ % 0.9999
+- Validation Accuracy : ~ %0.9368
+ (Test Accuracy: 0.9358999729156494)
 ---
 
 ## Grad
@@ -53,12 +54,11 @@ Example outputs :
 
 ---
 
-## How to Run
 
-```bash
+## Setup
+python -m venv tf_env
 pip install -r requirements.txt
-python main.py
-```
+
 
 ---
 
