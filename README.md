@@ -39,7 +39,7 @@ It contains :
 
 ## Results 
 
-- Test Accuracy : ~ % 0.9999
+- Training Accuracy : ~ % 0.9999
 - Validation Accuracy : ~ %0.9368
  (Test Accuracy: 0.9358999729156494)
 ---
