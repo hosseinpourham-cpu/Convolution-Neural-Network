@@ -89,7 +89,7 @@ project/
 - Add CutMix augmnetation (longer runtime, useful for high accuracy. Check the data folder.)
 - Train on GPU (WSL2 or Linux)
 - Add MixUp/MixCut data augmentation and smoothen some parameters to have a tradeOff between Training_accuracy and Validation_accuracy. Here is an example: 
-- - Add in data augmentation
+- - Add in data augmentation block ( in resnet.py):  x = layers.RandomRotation(0.05)(x)
 - - Set : Res_DROPOUT_RATE = 0.3, L2_WEIGHT = 1e-3, INITIAL_LEARNING_RATE = 0.02, EARLY_STOP_PATIENCE = 15
 - - Add mixUp in pipeline.
 - - This gives Trainng_accuracy= 0.9640, Validation_accuracy= with 0.9420 Test Accuracy: 0.9419999718666077
