@@ -10,7 +10,9 @@ def get_callbacks():
         ),
         tf.keras.callbacks.ModelCheckpoint(
             config.MODEL_PATH, #"output'models'best_model.keras"
-            save_only_best=True
+            monitor='val_loss',
+            save_best_only= True,
+            verbose=1
         )
        
     ]

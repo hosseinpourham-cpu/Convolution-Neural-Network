@@ -1,4 +1,4 @@
-from train.train_module import  run_training
+from training.train_module import  run_training
 from evaluation.evaluate import run_evaluation
 
 if __name__ == "__main__":

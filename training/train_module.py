@@ -5,7 +5,7 @@ def run_training():
     from training.callbacks import get_callbacks
     from training.train import train_model
     from evaluation.plots import plot_history
-    from gradCAM import make_gradcam_heatmap
+    from explainability.gradCAM import make_gradcam_heatmap
     import config 
 
     import tensorflow as tf
@@ -31,7 +31,7 @@ def run_training():
     lr_schedule = tf.keras.optimizers.schedules.CosineDecay(
     initial_learning_rate= config.INITIAL_LEARNING_RATE,
     decay_steps=steps_per_epoch * config.EPOCHS,
-    alpha=config.S_ALHPA
+    alpha=config.S_ALPHA
 )
   
     optimizer = tf.keras.optimizers.SGD(

@@ -1,4 +1,4 @@
-from tensotflow.keras import layers, models
+from tensorflow.keras import layers, models
 import tensorflow as tf
 import config
 

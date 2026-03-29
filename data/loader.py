@@ -1,4 +1,4 @@
-import tensorlflow as tf
+import tensorflow as tf
 import config
 
 def load_cifar10():

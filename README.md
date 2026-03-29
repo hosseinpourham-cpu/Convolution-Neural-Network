@@ -29,7 +29,6 @@ It contains :
 
 ## Training Features 
 
-- MixUp data augmentation
 - Cosine learning rate schedule
 - SGD optmizer
 - EarlyStopping
@@ -39,9 +38,9 @@ It contains :
 
 ## Results 
 
-- Training Accuracy : ~ % 0.9999
-- Validation Accuracy : ~ %0.9368
- (Test Accuracy: 0.9358999729156494)
+- Training Accuracy =  0.9999
+- Validation Accuracy = 0.9368
+ (Test Accuracy = 0.9358999729156494)
 ---
 
 ## Grad
@@ -89,6 +88,11 @@ project/
 - Try deeper ResNet variants (Net32 for instance, longer runtime. Check the model folder.)
 - Add CutMix augmnetation (longer runtime, useful for high accuracy. Check the data folder.)
 - Train on GPU (WSL2 or Linux)
+- Add MixUp/MixCut data augmentation and smoothen some parameters to have a tradeOff between Training_accuracy and Validation_accuracy. Here is an example: 
+- - Add in data augmentation
+- - Set : Res_DROPOUT_RATE = 0.3, L2_WEIGHT = 1e-3, INITIAL_LEARNING_RATE = 0.02, EARLY_STOP_PATIENCE = 15
+- - Add mixUp in pipeline.
+- - This gives Trainng_accuracy= 0.9640, Validation_accuracy= with 0.9420 Test Accuracy: 0.9419999718666077
 
 
 ## Author
