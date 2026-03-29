@@ -92,7 +92,7 @@ project/
 - - Add in data augmentation block ( in resnet.py):  x = layers.RandomRotation(0.05)(x)
 - - Set : Res_DROPOUT_RATE = 0.3, L2_WEIGHT = 1e-3, INITIAL_LEARNING_RATE = 0.02, EARLY_STOP_PATIENCE = 15
 - - Add mixUp in pipeline.
-- - This gives Trainng_accuracy= 0.9640, Validation_accuracy= 0.9420 with Test Accuracy: 0.9419999718666077
+- - This gives Trainng_accuracy= 0.9640, Validation_accuracy= 0.9420 with Test Accuracy= 0.9419999718666077
 
 
 ## Author
